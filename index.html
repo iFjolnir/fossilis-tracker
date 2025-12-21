@@ -5,74 +5,165 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fossilis Tracker</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Fossilis</h1>
+<h1>Fossilis Dino Inventory</h1>
 
-<div id="board">
+<div id="play-area">
+
+  <div id="board">
+
   <!-- Each tile -->
-  <div class="tile absent" data-key="carnivore">
-    <div class="label">Carnivore</div>
-    <div class="value">3</div>
-    <div class="count">0</div>
+
+<div class="tile absent carnivore" data-key="carnivore">
+  <div class="icon">
+    <img src="icons/carnivore.svg" alt="">
   </div>
 
-  <div class="tile absent" data-key="herbivore">
-    <div class="label">Herbivore</div>
-    <div class="value">4</div>
+  <div class="info">
     <div class="count">0</div>
-  </div>
-
-  <div class="tile absent" data-key="biped">
-    <div class="label">Biped</div>
-    <div class="value">5</div>
-    <div class="count">0</div>
-  </div>
-
-  <div class="tile absent" data-key="quadruped">
-    <div class="label">Quadruped</div>
-    <div class="value">5</div>
-    <div class="count">0</div>
-  </div>
-
-  <div class="tile absent" data-key="aquatic">
-    <div class="label">Aquatic</div>
-    <div class="value">7</div>
-    <div class="count">0</div>
-  </div>
-
-  <div class="tile absent" data-key="avian">
-    <div class="label">Avian</div>
-    <div class="value">7</div>
-    <div class="count">0</div>
-  </div>
-
-  <div class="tile absent" data-key="triassic">
-    <div class="label">Triassic</div>
-    <div class="value">6</div>
-    <div class="count">0</div>
-  </div>
-
-  <div class="tile absent" data-key="jurassic">
-    <div class="label">Jurassic</div>
-    <div class="value">6</div>
-    <div class="count">0</div>
-  </div>
-
-  <div class="tile absent" data-key="cretaceous">
-    <div class="label">Cretaceous</div>
-    <div class="value">6</div>
-    <div class="count">0</div>
+    <div class="set-value"> 3 pts</div>
   </div>
 </div>
 
-<div id="footer">
-  <div id="variety">Variety +12</div>
-  <div>Total score: <span id="score">0</span></div>
-  <button id="reset">New Game</button>
+
+<div class="tile absent herbivore" data-key="herbivore">
+  <div class="icon">
+    <img src="icons/herbivore.svg" alt="">
+  </div>
+
+  <div class="info">
+    <div class="count">0</div>
+    <div class="set-value"> 4 pts</div>
+  </div>
 </div>
 
-<script src="app.js"></script>
-</body>
+
+<div class="tile absent biped" data-key="biped">
+  <div class="icon">
+    <img src="icons/biped.svg" alt="">
+  </div>
+
+  <div class="info">
+    <div class="count">0</div>
+    <div class="set-value"> 5 pts</div>
+  </div>
+</div>
+
+
+<div class="tile absent quadruped" data-key="quadruped">
+  <div class="icon">
+    <img src="icons/quadruped.svg" alt="">
+  </div>
+
+  <div class="info">
+    <div class="count">0</div>
+    <div class="set-value"> 5 pts</div>
+  </div>
+</div>
+
+
+<div class="tile absent aquatic" data-key="aquatic">
+  <div class="icon">
+    <img src="icons/aquatic.svg" alt="">
+  </div>
+
+  <div class="info">
+    <div class="count">0</div>
+    <div class="set-value"> 7 pts</div>
+  </div>
+</div>
+
+
+<div class="tile absent avian" data-key="avian">
+  <div class="icon">
+    <img src="icons/avian.svg" alt="">
+  </div>
+
+  <div class="info">
+    <div class="count">0</div>
+    <div class="set-value"> 7 pts</div>
+  </div>
+</div>
+
+
+<div class="tile absent triassic" data-key="triassic">
+  <div class="icon">
+    <img src="icons/triassic.svg" alt="">
+  </div>
+
+  <div class="info">
+    <div class="count">0</div>
+    <div class="set-value"> 6 pts</div>
+  </div>
+</div>
+
+<div class="tile absent jurassic" data-key="jurassic">
+  <div class="icon">
+    <img src="icons/jurassic.svg" alt="">
+  </div>
+
+  <div class="info">
+    <div class="count">0</div>
+    <div class="set-value"> 6 pts</div>
+  </div>
+</div>
+
+<div class="tile absent cretaceous" data-key="cretaceous">
+  <div class="icon">
+    <img src="icons/cretaceous.svg" alt="">
+  </div>
+
+  <div class="info">
+    <div class="count">0</div>
+    <div class="set-value"> 6 pts</div>
+  </div>
+</div>
+</div>
+
+
+<div id="dashboard">
+
+  <div id="variety-panel">
+   <div class="variety-header">
+  <span class="variety-title">Variety bonus</span>
+  <span class="variety-points">— 12 pts</span>
+</div>
+<div id="variety-icons">
+
+  <img src="icons/carnivore_mini.svg" data-key="carnivore" alt="">
+  <img src="icons/herbivore_mini.svg" data-key="herbivore" alt="">
+  <img src="icons/biped_mini.svg" data-key="biped" alt="">
+  <img src="icons/quadruped_mini.svg" data-key="quadruped" alt="">
+  <img src="icons/aquatic_mini.svg" data-key="aquatic" alt="">
+  <img src="icons/avian_mini.svg" data-key="avian" alt="">
+  <img src="icons/triassic_mini.svg" data-key="triassic" alt="">
+  <img src="icons/jurassic_mini.svg" data-key="jurassic" alt="">
+  <img src="icons/cretaceous_mini.svg" data-key="cretaceous" alt="">
+
+</div>
+
+  </div>
+
+  <div id="score-panel">
+    <div class="label">Score</div>
+    <div id="score">0</div>
+  </div>
+
+  <button id="reset" aria-label="Reset game">
+    ↻
+  </button>
+
+</div>
+
+
+
+
+</div> <!-- end dashboard -->
+
+</div> <!-- end play-area -->
+
+<script src="app.js"></script></body>
 </html>
