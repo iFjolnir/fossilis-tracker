@@ -305,3 +305,11 @@ button {
 }
 
 
+/* === Mobile tweaks === */
+@media (max-width: 480px) {
+  .tile .icon img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
