@@ -313,3 +313,10 @@ button {
   }
 }
 
+@media (max-width: 480px) {
+  .tile .icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
