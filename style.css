@@ -309,8 +309,8 @@ button {
 @media (max-width: 700px) {
   /* make the big tile icons smaller */
   .icon img {
-    width: 24px !important;
-    height: 24px !important;
+    width: 32px !important;
+    height: 32px !important;
   }
 
   /* tighten the tile layout so text has room */
@@ -327,3 +327,4 @@ button {
     font-size: 11px;
   }
 }
+
