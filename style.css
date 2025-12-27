@@ -382,5 +382,12 @@ button {
 }
 
 }
+button,
+.tile {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none; /* kills long-press copy menu on iOS */
+}
+
 
 
